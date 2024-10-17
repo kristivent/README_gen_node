@@ -1,2 +1,2 @@
-# README_gen_node
+# READMEgen_nodejs
 README.md generator using nodejs
