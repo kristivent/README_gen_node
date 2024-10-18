@@ -4,8 +4,6 @@ import fs from 'fs';
 
 // TODO: Create an array of questions for user input
 const questions = [
-    inquirer
-    .prompt([
       {
         type: 'input',
         name: 'title',
@@ -47,11 +45,35 @@ const questions = [
         name: 'email',
         message: 'Enter your email',
       },
-    ])
-];
+    ];
+
+function generateReadme(answers) {
+  return `
+  # ${answers.title}
+
+  ## Description
+  ${answers.description}
+
+  ## Usage
+  ${answers.usage}
+
+  ## Tests
+  ${answers.tests}
+
+  ## License
+  This project is licensed under the ${answers.license} license.
+
+  ## Questions
+  For any questions, please reach out to me via GitHub [${answers.username}](https://github.com/${answers.username}) 
+  or email me at ${answers.email}.
+  `;
+}
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+
+  
+}
 
 // TODO: Create a function to initialize app
 function init() {}
