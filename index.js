@@ -27,7 +27,7 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'contribution',
+    name: 'contributing',
     message: 'What are the contribution guidelines?',
   },
   {
@@ -39,7 +39,7 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'What license was used?',
-    choices: ['mit', 'apache', 'gpl']
+    choices: ['mit', 'apache', 'gpl', 'none']
   },
   {
     type: 'input',

@@ -11,6 +11,7 @@ function renderLicenseBadge(license) {
   } else if (!license || license === 'none') {
     return '';
   }
+  return badge;
 }
 
 // TODO: Create a function that returns the license link
@@ -21,8 +22,8 @@ function renderLicenseLink(license) {
   } else if (license === 'mit') {
     return 'https://opensource.org/licenses/MIT';
   } else if (license === 'apache') {
-    return 'https://opensource.org/license/apache-2-0';
-  } else if (license === 'gpl') {
+    return 'https://opensource.org/license/Apache-2-0';
+  } else if (license ==='gpl') {
     return 'https://opensource.org/license/gpl-3-0';
   }
 }
@@ -32,13 +33,25 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (!license || license === 'none') {
     return '';
-  } else return `##License 
+  } else return `## License 
   This project is licensed under the [${license.toUpperCase()} license](${renderLicenseLink(license)}).`
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ${renderLicenseBadge(data.license)}
+
+  ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [License](#license)
+  - [Questions](#questions)
+
 
   ## Description
   ${data.description}
@@ -50,7 +63,7 @@ function generateMarkdown(data) {
   ${data.usage}
   
   ## Contributing
-  ${data.contribution}
+  ${data.contributing}
 
   ## Tests
   ${data.tests}
