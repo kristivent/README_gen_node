@@ -26,10 +26,14 @@
 
   ## Tests
   Run node index.js and respond to the questions in the prompts.  Upon completion, a README.md file should be created in your working folder. Opening the file in Preview allows for interactivity.
+  Sample README contained in "sampleREADME" folder and this README (for the full project) were both created using the generator for further testing.
 
   ## License 
   This project is licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
   ## Questions
   For any questions, please reach out via GitHub [kristivent](https://github.com/kristivent) or email at ventk84@gmail.com.
+  Link to video: https://drive.google.com/file/d/1TidHoeC4UB7YBtQq3Y9CFq8DoXaBTmST/view?usp=sharing
+  Sample README - See "sampleREADME" folder in repo
+  Source code from original project module on BootcampSpot/GitLab repo; additional Google searches used to research inquirer documentation for prompts and framework for Table of Contents.
   
